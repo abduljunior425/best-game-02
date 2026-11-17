@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wispwood Lantern</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #070d08; }
+  #stage { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #spoken { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="stage" aria-label="Wispwood Lantern: guide the lantern moth, gather glowing spores, dash through shadow wisps, and survive until dawn"></canvas>
+<p id="spoken" role="status" aria-live="polite"></p>
+<script type="module" src="./src/boot.js"></script>
+</body>
+</html>
